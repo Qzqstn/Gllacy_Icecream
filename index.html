@@ -23,22 +23,22 @@
                 </ul>
                 <ul class="navigation-list">
                     <li class="phone-number">
-                        <tel ></tel>
+                        <a href="+78005558628">+7 800 555-86-28</a>
                     </li>
                     <li class="search">
-
+                        
                     </li>
                     <li class="entrance">
-
+                        <button class="header-button entrance_button">Вход</button>
                     </li>
                     <li class="shopping-cart">
-
+                        <button class="header-button cart_button">Корзина</button>
                     </li>
                 </ul>
             </nav>
         </header>
         <main class="content">
-            <h1>Магазин мороженого «Глейси»</h1>
+            <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
             <section >
                 
             </section>
@@ -64,47 +64,138 @@
                     </article>
                 </div>
             </section>
+            
             <section class="popular">
                 <h2 class="visually-hidden">Популярное</h2>
                 <p class="title">Попробуйте самые популярные <br> вкусы нашего мороженого</p>
-                <li class="popular">
-                    <li class="popular_card"></li>
-                    <li class="popular_card"></li>
-                    <li class="popular_card"></li>
-                    <li class="popular_card"></li>
-                </li>
+                <ul class="popular">
+                    <li class="popular_card">
+                        <img class="card_image" src="images/raspberry_card_png.png" alt="Малиновый шарик">
+                        <h3>Малинка</h3>
+                        <p>Сливочное мороженое с малиновым джемом</p>
+                        <div class="wrapper">
+                            <p>310 ₽/кг</p>
+                            <button class="buy"></button>
+                        </div>
+                    </li>
+                    <li class="popular_card">
+                        <img class="card_image" src="images/pistachios_card_png.png" alt="Фисташковый шарик">
+                        <h3>Фисташка</h3>
+                        <p>Фисташковый пломбир с кусочками шоколада</p>
+                        <div class="wrapper">
+                            <p>340 ₽/кг</p>
+                            <button class="buy"></button>
+                        </div>
+                    </li>
+                    <li class="popular_card">
+                        <img class="card_image" src="images/blueberries_card_png.png" alt="Черничный шарик">
+                        <h3>Черника</h3>
+                        <p>Крем-брюле<br> с черничным джемом</p>
+                        <div class="wrapper">
+                            <p>330 ₽/кг</p>
+                            <button class="buy"></button>
+                        </div>
+                    </li>
+                    <li class="popular_card">
+                        <img class="card_image" src="images/bubblegum_card_png.png" alt="Жевачный шарик">
+                        <h3>Бабл-гам</h3>
+                        <p>Ванильный пломбир<br> со сладкой посыпкой</p>
+                        <div class="wrapper">
+                            <p>320 ₽/кг</p>
+                            <button class="buy"></button>
+                        </div>
+                    </li>
+                </ul>
             </section>
             <section class="about">
-                <h2 class="visually-hidden">
-                    О нас
-                </h2>
+                <h2 class="visually-hidden">О нас</h2>
+                <div class="wrapper">
+                    <p class="description">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес</p>
+                    <ul class="advantages">
+                        <li>
+                            <img class="about_icon" src="images/about_icecream_svg.svg" alt="" width="48px" height="48px">
+                            <p>Всё наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</p>
+                        </li>
+                        <li>
+                            <img class="about_icon" src="images/about_cow_svg.svg" alt="" width="48px" height="48px">
+                            <p>Закупка ингредиентов производится только <br>
+                                у проверенных фермерских хозяйств, с которыми <br>
+                                нас связывает долговременное сотрудничество.</p>
+                        </li>
+                        <li>
+                            <img class="about_icon" src="images/about_leaf_svg.svg" alt="" width="48px" height="48px">
+                            <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
+                                <br>и добавки произведены из натурального сырья.</p>
+                        </li>
+                        <li>
+                            <img class="about_icon" src="images/about_termometer_svg.svg" alt="" width="48px" height="48px">
+                            <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
+                        </li>
+                    </ul>    
+                </div>
             </section>
-            <article class="blog">
-
-            </article>
-            <section class="mailing">
-                
-            </section>
+            <div class="stuff">
+                <article class="blog">
+                    <p class="new">Новое в нашем блоге</p>
+                    <p class="blog_title">10 способов сервировки фруктовых щербетов к столу</p>
+                </article>
+                <section class="mailing">
+                    <div class="wrapper">
+                        <p>Подпишитесь на нашу сладкую рассылку и будьте всегда <br>
+                            в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p> 
+                        <form>
+                            <input class="field" type="email" placeholder="email@example.com">
+                            <input class="submit_button" type="submit">
+                        </form> 
+                    </div>
+                </section>
+            </div>
             <section class="delivery">
-                <h2>
-                    Доставка
-                </h2>
+                <div class="wrapper">
+                    <h2 class="visually-hidden">Доставка</h2>
+                    <p class="title">Доставка любимого мороженого на дом</p>
+                    <p class="delivery_text">Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+                </div>
+                <form class="delivery__form">
+                    <p>Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
+                    <div class="date_wrapper wrapper">
+                        <label for="date">Дата</label>
+                        <button class="info"></button>
+                        <input id="date" type="date" > 
+                    </div>
+                    <div class="number_wrapper wrapper">
+                        <label for="number">Телефон</label>
+                        <input id="number" type="number" placeholder="+7 800 999-00-00">
+                    </div>
+                    <div class="adress_wrapper wrapper">
+                        <label for="adress">Адрес</label>
+                        <button class="info"></button>
+                        <input id="adress" type="text" placeholder="ул. Большая Конюшенная, 19/8">
+                    </div>
+                    <input class="delivery_button submit_button" type="submit">
+                </form>
             </section>
             <section class="contacts">
-                <h2>
-                    Контактная информация
-                </h2>
+                <h2 class="visually-hidden">Контактная информация</h2>
+                <div class="wrapper">
+                    <p class="contacts__p contacts__adress__text">Адрес главного офиса <br> и офлайн-магазина:</p>
+                    <p class="contacts__p contacts_adress__info">наб. реки Карповки, <br> 5 лит П, Санкт-Петербург</p>
+                    <p class="contacts__p contacts__number__text">Для заказов по телефону:</p>
+                    <p class="contacts__p contacts__number__info">+7 (812) 812-12-12</p>
+                    <p class="contacts__p contacts__timing">(с 10 до 20 ежедневно)</p>
+                    <button class="contacts_button">Форма обратной связи</button>
+                </div>
             </section>
         </main>
-        <footer>
+        <footer class="page-footer">
             <ul class="social">
-                <li class="icon-vk">
+                <li class="icon icon-vk">
                     <a href="#">Вконтакте</a>
                 </li>
-                <li class="icon-fb">
+                <li class="icon icon-fb">
                     <a href="#">Фейсбук</a>
                 </li>
-                <li class="icon-inst">
+                <li class="icon icon-inst">
                     <a href="#">Инстаграм</a>
                 </li>
             </ul>
