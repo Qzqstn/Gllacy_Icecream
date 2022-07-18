@@ -12,13 +12,13 @@
             <nav class="header-navigation">
                 <ul class="navigation-list">
                     <li class="catalog">
-                        <a href="#">Каталог</a>
+                        <a href="#" tabindex="0">Каталог</a>
                     </li>
                     <li class="delivery">
-                        <a href="#">Доставка и оплата</a>
+                        <a href="#" tabindex="0">Доставка и оплата</a>
                     </li>
                     <li class="about">
-                        <a href="#">О компании</a>
+                        <a href="#" tabindex="0">О компании</a>
                     </li>
                 </ul>
                 <ul class="navigation-list">
@@ -26,7 +26,7 @@
                         <a href="+78005558628">+7 800 555-86-28</a>
                     </li>
                     <li class="search">
-                        
+                        <button class="header-button search_button"></button>
                     </li>
                     <li class="entrance">
                         <button class="header-button entrance_button">Вход</button>
@@ -50,7 +50,7 @@
                         <div class="wrapper">
                             <h3>Малинка даром!</h3>
                             <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                            <a href="#">Хочу подарок!</a>
+                            <a href="#" class="main-button">Хочу подарок!</a>
                         </div>
                         <img src="images/raspberry_png.png">
                     </article>
@@ -58,7 +58,7 @@
                         <div class="wrapper">
                             <h3>Маршмеллоу даром!</h3>
                             <p>При покупке 2 кг пломбира добавим <br> в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-                            <a href="#">Хочу подарок!</a>
+                            <a href="#" class="main-button">Хочу подарок!</a>
                         </div>
                         <img src="images/marshmallow_png.png">
                     </article>
@@ -145,7 +145,7 @@
                             в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p> 
                         <form>
                             <input class="field" type="email" placeholder="email@example.com">
-                            <input class="submit_button" type="submit">
+                            <input class="second_button" type="submit" disabled >
                         </form> 
                     </div>
                 </section>
@@ -161,18 +161,18 @@
                     <div class="date_wrapper wrapper">
                         <label for="date">Дата</label>
                         <button class="info"></button>
-                        <input id="date" type="date" > 
+                        <input class="form_input_field" id="date" type="date" > 
                     </div>
                     <div class="number_wrapper wrapper">
                         <label for="number">Телефон</label>
-                        <input id="number" type="number" placeholder="+7 800 999-00-00">
+                        <input class="form_input_field" id="number" type="tel" placeholder="+7 800 999-00-00">
                     </div>
                     <div class="adress_wrapper wrapper">
                         <label for="adress">Адрес</label>
                         <button class="info"></button>
-                        <input id="adress" type="text" placeholder="ул. Большая Конюшенная, 19/8">
+                        <input class="form_input_field" id="adress" type="text" placeholder="ул. Большая Конюшенная, 19/8">
                     </div>
-                    <input class="delivery_button submit_button" type="submit">
+                    <input class="delivery_button second_button" type="submit">
                 </form>
             </section>
             <section class="contacts">
@@ -183,22 +183,42 @@
                     <p class="contacts__p contacts__number__text">Для заказов по телефону:</p>
                     <p class="contacts__p contacts__number__info">+7 (812) 812-12-12</p>
                     <p class="contacts__p contacts__timing">(с 10 до 20 ежедневно)</p>
-                    <button class="contacts_button">Форма обратной связи</button>
+                    <button class="second_button ">Форма обратной связи</button>
                 </div>
             </section>
         </main>
         <footer class="page-footer">
             <ul class="social">
                 <li class="icon icon-vk">
-                    <a href="#">Вконтакте</a>
+                    <a href="#"></span></a>
                 </li>
                 <li class="icon icon-fb">
-                    <a href="#">Фейсбук</a>
+                    <a href="#"></a>
                 </li>
                 <li class="icon icon-inst">
-                    <a href="#">Инстаграм</a>
+                    <a href="#"></a>
                 </li>
             </ul>
+
+            <ul class="links">
+                <li class="different">
+                    <a href="">Для поставщиков</a>
+                </li>
+                <li>
+                    <a href="">Наши документы</a>
+                </li>
+                <li>
+                    <a href=""> О производстве</a>
+                </li>
+                <li>
+                    <a href="">Экологические стандарты</a>
+                </li>
+            </ul>
+
+            <div class="wrapper">
+                <img src="images/footer-logo.svg" alt="Логитип ">
+                <p class="autors">Сделано в <a href="">.html academy</a> © 2021</p>
+            </div>
         </footer>
     </body>
 
